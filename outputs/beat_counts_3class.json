@@ -1,0 +1,20 @@
+{
+  "mitdb_total": {
+    "N": 90102,
+    "S": 2781,
+    "V": 7810
+  },
+  "svdb_total": {
+    "N": 162296,
+    "S": 12196,
+    "V": 9964
+  },
+  "combined": {
+    "N": 252398,
+    "S": 14977,
+    "V": 17774
+  },
+  "grand_total": 285149,
+  "mitdb_records": 44,
+  "svdb_records": 78
+}

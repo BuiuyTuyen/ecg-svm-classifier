@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Large trained models (retrain locally) — keep small models tracked explicitly
+outputs/ecg_rf_*.pkl
+*.joblib
+
+# Raw ECG databases (download from PhysioNet)
+mitdb/
+svdb/
+mitdb_data/
+svdb_data/
+*.dat
+*.hea
+*.atr
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+~$*

@@ -1,0 +1,259 @@
+{
+  "model": "RandomForest",
+  "databases": [
+    "MIT-BIH (44 records, paced excluded)",
+    "MIT-BIH Supraventricular (78 records)"
+  ],
+  "classes": [
+    "N",
+    "S",
+    "V"
+  ],
+  "test_size": 0.2,
+  "seed": 42,
+  "best_params": {
+    "max_depth": null,
+    "min_samples_split": 2,
+    "n_estimators": 200
+  },
+  "accuracy": 0.9149042557131746,
+  "macro_f1": 0.6314447329059455,
+  "weighted_f1": 0.9215297362140437,
+  "per_class": {
+    "N": {
+      "precision": 0.9803513638465094,
+      "recall": 0.9455964325529543,
+      "f1": 0.9626603109749177,
+      "support": 49335
+    },
+    "S": {
+      "precision": 0.32418838591678095,
+      "recall": 0.3654639175257732,
+      "f1": 0.34359098618851464,
+      "support": 1940
+    },
+    "V": {
+      "precision": 0.48355029585798814,
+      "recall": 0.7502754315093647,
+      "f1": 0.5880829015544041,
+      "support": 2723
+    }
+  },
+  "confusion_matrix": [
+    [
+      46651,
+      1238,
+      1446
+    ],
+    [
+      495,
+      709,
+      736
+    ],
+    [
+      440,
+      240,
+      2043
+    ]
+  ],
+  "n_train": 230307,
+  "n_train_balanced": 601403,
+  "n_test": 53998,
+  "split_strategy": "patient-wise per database",
+  "n_train_records": 97,
+  "n_test_records": 25,
+  "train_records": [
+    "mitdb_100",
+    "mitdb_101",
+    "mitdb_103",
+    "mitdb_105",
+    "mitdb_108",
+    "mitdb_109",
+    "mitdb_111",
+    "mitdb_113",
+    "mitdb_114",
+    "mitdb_115",
+    "mitdb_117",
+    "mitdb_118",
+    "mitdb_119",
+    "mitdb_121",
+    "mitdb_122",
+    "mitdb_123",
+    "mitdb_124",
+    "mitdb_200",
+    "mitdb_201",
+    "mitdb_202",
+    "mitdb_203",
+    "mitdb_208",
+    "mitdb_209",
+    "mitdb_210",
+    "mitdb_212",
+    "mitdb_213",
+    "mitdb_214",
+    "mitdb_215",
+    "mitdb_219",
+    "mitdb_221",
+    "mitdb_228",
+    "mitdb_230",
+    "mitdb_232",
+    "mitdb_233",
+    "mitdb_234",
+    "svdb_801",
+    "svdb_802",
+    "svdb_803",
+    "svdb_805",
+    "svdb_806",
+    "svdb_807",
+    "svdb_808",
+    "svdb_809",
+    "svdb_811",
+    "svdb_820",
+    "svdb_821",
+    "svdb_822",
+    "svdb_823",
+    "svdb_824",
+    "svdb_826",
+    "svdb_827",
+    "svdb_828",
+    "svdb_840",
+    "svdb_841",
+    "svdb_842",
+    "svdb_843",
+    "svdb_844",
+    "svdb_845",
+    "svdb_846",
+    "svdb_848",
+    "svdb_849",
+    "svdb_852",
+    "svdb_853",
+    "svdb_854",
+    "svdb_855",
+    "svdb_856",
+    "svdb_857",
+    "svdb_858",
+    "svdb_859",
+    "svdb_860",
+    "svdb_862",
+    "svdb_863",
+    "svdb_864",
+    "svdb_865",
+    "svdb_867",
+    "svdb_868",
+    "svdb_869",
+    "svdb_870",
+    "svdb_872",
+    "svdb_873",
+    "svdb_874",
+    "svdb_875",
+    "svdb_876",
+    "svdb_877",
+    "svdb_879",
+    "svdb_880",
+    "svdb_881",
+    "svdb_882",
+    "svdb_884",
+    "svdb_885",
+    "svdb_886",
+    "svdb_887",
+    "svdb_888",
+    "svdb_890",
+    "svdb_891",
+    "svdb_892",
+    "svdb_893"
+  ],
+  "test_records": [
+    "mitdb_106",
+    "mitdb_112",
+    "mitdb_116",
+    "mitdb_205",
+    "mitdb_207",
+    "mitdb_220",
+    "mitdb_222",
+    "mitdb_223",
+    "mitdb_231",
+    "svdb_800",
+    "svdb_804",
+    "svdb_810",
+    "svdb_812",
+    "svdb_825",
+    "svdb_829",
+    "svdb_847",
+    "svdb_850",
+    "svdb_851",
+    "svdb_861",
+    "svdb_866",
+    "svdb_871",
+    "svdb_878",
+    "svdb_883",
+    "svdb_889",
+    "svdb_894"
+  ],
+  "timings_seconds": {
+    "load_mitdb": 1.7523856000043452,
+    "load_svdb": 9.058531699993182,
+    "data_loading_total": 10.812909800035413,
+    "preprocessing": 0.2758705000160262,
+    "feature_extraction": 76.77676569996402,
+    "scaling_pca": 0.18022470001596957,
+    "smoteenn": 36.69905850000214,
+    "gridsearch_rf": 4832.463053299987,
+    "final_training": 152.2779030999518,
+    "prediction_total": 0.674760999972932,
+    "single_beat_latency_ms": 98.24960909999209,
+    "permutation_importance": 84.441609099973
+  },
+  "total_training_time_seconds": 5109.485785599973,
+  "total_training_time_hms": "01:25:09",
+  "avg_prediction_latency_ms_batch": 0.012496036889753918,
+  "single_beat_latency_ms": 98.24960909999209,
+  "permutation_importance": {
+    "PC6": {
+      "mean": 0.09591466350605579,
+      "std": 0.000782150875698828
+    },
+    "PC5": {
+      "mean": 0.04167932145635023,
+      "std": 0.00045242988711251324
+    },
+    "PC3": {
+      "mean": 0.025487981036334706,
+      "std": 0.0008429412131733779
+    },
+    "PC2": {
+      "mean": 0.017904366828401075,
+      "std": 0.0008325324771236438
+    },
+    "PC7": {
+      "mean": 0.006150227786214301,
+      "std": 0.0008978835301017624
+    },
+    "PC4": {
+      "mean": 0.005876143560872638,
+      "std": 0.0005378896466587267
+    },
+    "PC1": {
+      "mean": 0.002183414200525968,
+      "std": 0.0005486468632470131
+    },
+    "PC12": {
+      "mean": -0.0008463276417644882,
+      "std": 0.00045408318844256004
+    },
+    "PC8": {
+      "mean": -0.0010944849809251922,
+      "std": 0.00038101434746685926
+    },
+    "PC10": {
+      "mean": -0.002420460017037651,
+      "std": 0.0004450816374858607
+    },
+    "PC9": {
+      "mean": -0.0039427386199488825,
+      "std": 0.00022838767079851705
+    },
+    "PC11": {
+      "mean": -0.006453942738619933,
+      "std": 0.0002992155599920559
+    }
+  }
+}

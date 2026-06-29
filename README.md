@@ -7,6 +7,11 @@ baselines for comparison.
 
 This is the machine-learning core of my undergraduate graduation thesis.
 
+**🔗 Related links**
+- 🌐 **Full thesis website (live):** https://do-an-tot-nghiep-tuyen.netlify.app — all 4 chapters, with interactive ECG demos, formulas, and a hyperparameter-search walkthrough.
+- 📂 **Website source:** https://github.com/BuiuyTuyen/ecg-thesis-site
+- 🩺 The thesis also includes an **ESP32 + AD8232 hardware** system for live ECG acquisition (see Chapter 4 of the website).
+
 ---
 
 ## 1. Problem
